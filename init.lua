@@ -65,6 +65,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
+  -- Markdown preview
+  {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
